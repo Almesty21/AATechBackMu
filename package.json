@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "It is a mern app nodejs with react js",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
+  "scripts": {  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",
